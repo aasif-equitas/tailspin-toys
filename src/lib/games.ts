@@ -42,9 +42,7 @@ function mapGame(row: GameSelectionRow): Game {
     };
 }
 
-type BaseGamesQuery = ReturnType<ReturnType<Database['select']>['from']>;
-
-function baseGamesQuery(db: Database): BaseGamesQuery {
+function baseGamesQuery(db: Database) {
     return db
         .select(gameSelection)
         .from(games)

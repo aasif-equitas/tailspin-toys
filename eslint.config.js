@@ -55,6 +55,7 @@ export default [
         {
           allowExpressions: true,
           allowTypedFunctionExpressions: true,
+          allowedNames: ['baseGamesQuery'],
         },
       ],
     },
