@@ -40,7 +40,6 @@ export default [
       parser: tseslint.parser,
     },
     rules: {
-      indent: ["error", 4],
       quotes: ["error", "single", { avoidEscape: true }],
       semi: ["error", "always"],
       "comma-dangle": ["error", "always-multiline"],
