@@ -24,7 +24,7 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 
 ### TypeScript Formatting
 
-- Use the repository's existing TypeScript style: two-space indentation, semicolons, single quotes, and trailing commas in multiline literals and parameters.
+- Use the repository's existing TypeScript style: four-space indentation, semicolons, single quotes, and trailing commas in multiline literals and parameters.
 - Keep explicit parameter and return types on exported functions, especially in `db/` and `src/lib/`.
 - Run ESLint after TypeScript changes. ESLint enforces explicit return types for data-layer functions and catches syntax and TypeScript correctness issues.
 

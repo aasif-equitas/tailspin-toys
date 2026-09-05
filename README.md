@@ -80,7 +80,7 @@ Repository-wide coding standards are maintained in the [Copilot instructions](.g
 - Comments explain intent, rationale, and constraints — not code that is already self-explanatory.
 - Exported functions in `db/` and `src/lib/` include TSDoc/JSDoc describing their purpose, parameters, and return values.
 - Reusable Astro components document their `Props` interfaces and keep that API documentation current.
-- TypeScript uses the repository's two-space, semicolon, single-quote style; ESLint enforces explicit function return types in the data layer.
+- TypeScript uses the repository's four-space, semicolon, single-quote style; ESLint enforces explicit function return types in the data layer.
 
 ## Type checking
 

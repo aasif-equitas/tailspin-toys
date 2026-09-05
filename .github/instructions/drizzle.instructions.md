@@ -74,6 +74,6 @@ The data layer (`db/**/*.ts`, `src/lib/*.ts`) is type-checked by `npm run typech
 
 ## TypeScript formatting
 
-- Use two-space indentation, semicolons, single quotes, and trailing commas in multiline declarations.
+- Use four-space indentation, semicolons, single quotes, and trailing commas in multiline declarations.
 - Keep exported functions explicitly typed; ESLint enforces explicit return types for functions in `db/` and `src/lib/`.
 - Comments should explain data-flow intent, invariants, or decisions. Do not add comments that simply narrate a query or assignment.

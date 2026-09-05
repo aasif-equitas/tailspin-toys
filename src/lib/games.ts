@@ -1,4 +1,5 @@
 import { eq, asc } from 'drizzle-orm';
+import type { AnySQLiteSelect } from 'drizzle-orm/sqlite-core';
 import type { Database } from './db';
 import { games, categories, publishers } from '../../db/schema';
 import type { Game } from '../types/game';
@@ -42,7 +43,7 @@ function mapGame(row: GameSelectionRow): Game {
     };
 }
 
-function baseGamesQuery(db: Database) {
+function baseGamesQuery(db: Database): AnySQLiteSelect {
     return db
         .select(gameSelection)
         .from(games)
