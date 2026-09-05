@@ -39,5 +39,25 @@ export default [
     languageOptions: {
       parser: tseslint.parser,
     },
+    rules: {
+      quotes: ["error", "single", { avoidEscape: true }],
+      semi: ["error", "always"],
+      "comma-dangle": ["error", "always-multiline"],
+    },
+  },
+
+  // Keep public data-layer APIs explicit and easy to document and test.
+  {
+    files: ["db/**/*.ts", "src/lib/**/*.ts"],
+    rules: {
+      "@typescript-eslint/explicit-function-return-type": [
+        "error",
+        {
+          allowExpressions: true,
+          allowTypedFunctionExpressions: true,
+          allowedNames: ['baseGamesQuery'],
+        },
+      ],
+    },
   },
 ];
